@@ -1,0 +1,77 @@
+<div class="profile">
+    <div class="profilecard">
+        <img class="profilepic" src="/img/{{currentuser.img_url}}" alt="card image">
+        <div class="profilename">
+            {{currentuser.username}}
+            <div class="small-text">{{currentuser.bio}}</div>
+            <a class="edit-prof" href="/editprofile">edit profile</a>
+
+        </div>
+    </div>
+    {{#ifEquals currentuser.img_url 'default.png'}}
+        <div class="card profilecard">
+            <div class="card-body">
+                <h6 class="card-title">Your profile is incomplete</h6>
+                <p class="card-text">You still haven't uploaded a profile pic.</p>
+                <a href="/editprofile" class="card-link">Click to upload a profile picture</a>
+            </div>
+        </div>
+    {{/ifEquals}}
+        <div class="card profilecard">
+            <div class="card-body">
+                <h6 class="card-title">Friends</h6>
+                <div id="friends-body"></div>
+                <br>
+                <a href="/friends" class="card-link">more...</a>
+            </div>
+        </div>
+
+        <div class="card profilecard">
+            <div class="card-body" id="pending-requests-body">
+                <h6 class="card-title">Pending requests</h6>
+            </div>
+        </div>
+
+        <div class="card profilecard">
+            <div class="card-body" id="actions-body">
+                <h6 class="card-title">Actions</h6>
+                <a href="#share" id="share-cal" class="card-link">Share your next week of events with your friends</a>
+            </div>
+        </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="profilecard" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body" id="profilecardBody">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addfriend">Add friend</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="debug">
+{{#if error}}
+{{#each error}}
+<div>
+    {{this.message}}
+    <br>
+    {{#if this.debug}}
+    <div>{{this.debug}}</div>
+    {{/if}}
+</div>
+{{/each}}
+{{/if}}
+</div>
+
+<hidden id="usermsid" name="{{currentuser.msid}}"></hidden>

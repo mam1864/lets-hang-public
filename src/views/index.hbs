@@ -1,0 +1,12 @@
+Nothing here yet. This page will mostly advertise features.
+{{#if error}}
+{{#each error}}
+<div>
+    {{this.message}}
+    <br>
+    {{#if this.debug}}
+    <div>{{this.debug}}</div>
+    {{/if}}
+</div>
+{{/each}}
+{{/if}}

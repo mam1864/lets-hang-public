@@ -1,0 +1,296 @@
+
+html, body {
+    font-size: 26px;
+    background-color: #8fb4c4;
+}
+
+.center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+
+}
+
+.main-body {
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #46636e;
+}
+
+.nav-item {
+    font-size: 17px;
+}
+
+.profile {
+    width: 960px;
+    margin: auto;
+}
+
+.profilecard {
+    margin: 20px 20px 1px 1px;
+    background-color: #d4e4eb;
+    border-radius: 20px;
+}
+
+.search-result {
+    width: 300px;
+    display: inline-block;
+}
+
+.search-result > .profilecard {
+    border-color: #44bae934;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.search-result > .profilecard:hover {
+    cursor: pointer;
+}
+
+.profilepic {
+    width: 140px;
+    height: 140px;
+    background-color: #44bae9;
+    border-radius: 100px;
+    margin: 20px 20px 15px 20px;
+}
+
+.search-result > .profilecard > .profilepic {
+    width: 70px;
+    height: 70px;
+    margin: 15px 15px 15px 15px;
+    background-color: #44bae9;
+}
+
+.modal-body > .profilecard > .profilepic {
+    width: 140px;
+    height: 140px;
+    margin: 15px 15px 15px 15px;
+    background-color: #44bae9;
+}
+
+.profilename {
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+    position:absolute;
+    margin: 20px 0px 0px 0px;
+}
+
+.search-result > .profilecard > .profilename {
+    width:160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+
+.modal-body > .profilecard > .profilename {
+    width: 80%;
+    font-size: 20px;
+}
+
+/* #friends-body {
+    width: 300px;
+    display: inline-block;
+} */
+
+.small-text {
+    font-size: 20px;
+    font-weight:normal;
+    color: grey;
+}
+
+.smaller-text {
+    font-size: 14px;
+    font-weight:normal;
+    color: grey;
+}
+
+.search-result > .profilecard > .profilename > .small-text {
+    width: 160px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-body > .profilecard > .profilename > .small-text {
+    width: 60%;
+    font-size: 14px;
+}
+
+.edit-prof {
+    font-size: 15px;
+}
+
+.edit-prof:hover {
+    text-decoration: none;
+}
+
+h6 {
+    font-size: 30px;
+}
+
+.card-body {
+    padding: 15px 5px 20px 30px;
+}
+
+.err {
+    font-size: 36px;
+    color: red;
+}
+
+.btn-submit {
+    margin: 0px 60px 20px 0px;
+    float: right;
+    font-size: 16px;
+
+}
+
+.dropdown-toggle:hover {
+    cursor: pointer;
+}
+
+.btn-login {
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.btn-login:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 5px #888888;
+    transition: box-shadow 0.2s;
+}
+
+.large-icon {
+    width: 100px;
+    margin: 0px 10px 5px 10px;
+}
+
+.debug {
+    font-size: 16px;
+}
+
+.calendar-table-accountpage {
+    font-size: 12px;
+}
+
+.calendar-table {
+    margin: auto;
+    width: auto;
+    font-size: 18px;
+    background-color: #44bae9;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+thead > tr {
+    background-color: #44bae9;
+    text-align: center;
+
+}
+
+tbody > tr {
+    color: rgb(68, 68, 68);
+    background-color: #d4e4eb;
+    border-style: solid;
+    border-bottom: 2px;
+    border-width: 1px;
+    border-color: black;
+}
+
+thead {
+    border-radius: 10px 10px 0 0;
+    border-width: 10px;
+}
+
+th {
+    background-color: #44bae9;
+    color: white;
+}
+
+td.subj {
+    border-left-style: dotted;
+    max-width: 100px;
+    border-width: 1px;
+    padding: 2px 10px 2px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td.dateTime {
+    text-align: right;
+    padding: 2px 10px 2px 10px;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchbar {
+    width: 80%;
+    border-width: 0px 0px 0px 0px;
+    background-color: transparent;
+    font-style: italic;
+}
+
+.searchbar:focus {
+    color: rgb(88, 88, 88);
+    outline: none;
+    font-style:normal;
+}
+
+.addfriend {
+    float: right;
+    margin: 30px 10px 0px 0px;
+    border: none;
+    background-color: transparent;
+    color: #44bae9;
+}
+
+.addfriend:hover {
+    cursor: pointer;
+}
+
+.linktoaccfromfriends {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.linktoaccfromfriends:hover {
+    background-color:transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.input-label-group {
+    display: inline-block;
+    margin: 5px 20px 5px 1px;
+}
+
+.hidden {
+    display: none;
+}
+
+.emails-container {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    border-radius: 10px;
+    background-color: #46636e;
+}
+
+.name-email-group {
+    background-color: #44bae934;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}

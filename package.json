@@ -1,0 +1,52 @@
+{
+  "name": "mam1864-final-project",
+  "version": "1.0.0",
+  "description": "Long conversations with friends trying to find time to hang out are a thing of the past. With Let's Hang, you can simply upload your calendar, add your friends, and find open spaces in your schedules to meet up!",
+  "main": "app.js",
+  "dependencies": {
+    "@azure/msal-node": "^1.3.3",
+    "@microsoft/microsoft-graph-client": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "connect-flash": "^0.1.1",
+    "date-fns": "^2.25.0",
+    "date-fns-tz": "^1.1.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-promise-router": "^4.1.0",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "hbs": "^4.1.2",
+    "ical.js": "^1.4.0",
+    "isomorphic-fetch": "^3.0.0",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "mongoose-fuzzy-searching": "^2.0.2",
+    "passport": "^0.5.0",
+    "qs": "^6.10.1",
+    "socket.io": "^4.4.0",
+    "windows-iana": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-eslint": "^24.0.0",
+    "load-grunt-tasks": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-fall-2021/mam1864-final-project.git"
+  },
+  "author": "Michael Mironidis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-fall-2021/mam1864-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-fall-2021/mam1864-final-project#readme"
+}

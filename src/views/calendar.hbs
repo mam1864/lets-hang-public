@@ -1,0 +1,40 @@
+<div class="profile">
+
+    <div class="card profilecard">
+        <div class="card-body">
+            <h6 class="card-title">Events</h6>
+            <table class="calendar-table">
+            <thead>
+                <tr>
+                <th scope="col">Subject</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                {{#each events}}
+                <tr>
+                    <td>{{this.subject}}</td>
+                    <td class="dateTime">{{eventDateTime this.start.dateTime}}</td>
+                    <td class="dateTime">{{eventDateTime this.end.dateTime}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card profilecard">
+        <div class="card-body">
+                <h6 class="card-title">Friends</h6>
+                <div id="friends-body"></div>
+                <br>
+                <a href="/friends" class="card-link">more...</a>
+        </div>
+    </div>
+
+        <div class="center"><a href="/calendar/new" class="btn btn-light btn-sm">New event</a></div>
+
+</div>
+
+<hidden id="usermsid" name="{{currentuser.msid}}"></hidden>

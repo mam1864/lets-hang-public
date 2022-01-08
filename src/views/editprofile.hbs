@@ -1,0 +1,15 @@
+<div class="profile">
+    <div class="profilecard">
+        <img class="profilepic" src="/img/{{currentuser.img_url}}" alt="card image">
+        <div class="profilename">
+            <form action="editprofile" method="post" enctype="multipart/form-data">
+                <div class="small-text"><input type="text" name="username" value="{{currentuser.username}}" maxlength="26"></div>
+                <div class="small-text"><input type="text" name="bio" value="{{currentuser.bio}}" maxlength="160"></div>
+                <div class="smaller-text">New profile picture: <input type="file" accept="image/*" id="newpic" name="newpic"></div>
+                <input class="btn-submit" type="submit">
+            </form>
+        </div>
+    </div>
+    <br>
+        {{#if message }} <div class="alert alert-warning alert-dismissible fade show">{{ message }}</div> {{/if}}
+</div>
